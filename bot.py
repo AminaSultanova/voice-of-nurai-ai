@@ -60,11 +60,11 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     answer = ask_ai(user_message)
 
     if answer:
-        await update.message.reply_text(answer)
+        # Отправляем с HTML форматированием
+        await update.message.reply_text(answer, parse_mode="HTML")
     else:
         await update.message.reply_text(
-            "Произошла ошибка. Пожалуйста, нажмите SOS-кнопку в приложении Nurai "
-            "или позвоните 112."
+            "Произошла ошибка. Пожалуйста, нажмите SOS-кнопку в приложении Nurai или позвоните 112."
         )
 
 
