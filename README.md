@@ -139,8 +139,7 @@ threading.Thread(target=lambda: app.run(port=8080, host='0.0.0.0'), daemon=True)
 
 ## Переменные окружения (полный список)
 
-| Variable | Required | Description |
-|----------|----------|-------------|
-| TELEGRAM_BOT_TOKEN | Да | Токен от BotFather |
-| OPENROUTER_API_KEY | Да | API ключ OpenRouter |
+| TELEGRAM_BOT_TOKEN | Токен от BotFather |
+
+| OPENROUTER_API_KEY | API ключ OpenRouter |
 
